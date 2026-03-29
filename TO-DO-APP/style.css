@@ -1,0 +1,12 @@
+.priority-high { border-left: 4px solid #ef4444; }
+.priority-medium { border-left: 4px solid #f59e0b; }
+.priority-low { border-left: 4px solid #10b981; }
+.task-item:hover .task-actions { opacity: 1; }
+.task-actions { transition: opacity 0.2s ease; opacity: 0; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.fade-in { animation: fadeIn 0.3s ease forwards; }
+.custom-checkbox { appearance: none; -webkit-appearance: none; width: 20px; height: 20px; border: 2px solid #d1d5db; border-radius: 4px; outline: none; cursor: pointer; position: relative; }
+.custom-checkbox:checked { background-color: #3b82f6; border-color: #3b82f6; }
+.custom-checkbox:checked::after { content: "✓"; position: absolute; color: white; font-size: 12px; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.task-item.dragging { opacity: 0.5; background-color: #f3f4f6; }
+.task-item.over { border-top: 2px solid #3b82f6; }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Number Guessing Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page">
+
+        <h1>Number Guessing Game</h1>
+
+        <div class="block">
+            <p class="label">Range</p>
+            <input type="number" id="start" value="1">
+            <span class="to">to</span>
+            <input type="number" id="end" value="50">
+            <button onclick="setRange()">Set</button>
+        </div>
+
+        <div class="block">
+            <p class="label">Your Guess</p>
+            <input type="number" id="guess" placeholder="Enter guess">
+            <button onclick="submitGuess()">Submit</button>
+        </div>
+
+        <button class="reset" onclick="resetGame()">Reset</button>
+
+        <p id="message" class="message"></p>
+
+        <hr>
+
+        <h2>History</h2>
+        <ul id="history"></ul>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
